@@ -58,4 +58,15 @@ button:hover {
 .task-item {
   padding: 12px 14px;
   border-bottom: 1px solid #e5e7eb;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.task-item:hover {
+  background: #f9fafb;
+}
+
+.task-item.done {
+  text-decoration: line-through;
+  color: #8b8b8b;
 }

@@ -26,6 +26,10 @@ addTaskBtn.addEventListener('click', () => {
     li.textContent = taskText;
     li.classList.add('task-item');
 
+    li.addEventListener('click', () => {
+        li.classList.toggle('done');
+    });
+
     taskList.appendChild(li);
     taskInput.value = '';
 });
